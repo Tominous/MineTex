@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MineTex.exe" version="1.0.0.1" publicKeyToken="49a2b9999bae24e9" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="lemon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MineTex" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="MineTex.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MineTex.exe" size="398880">
+      <assemblyIdentity name="MineTex" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PmIKksT2CD2nHNKznCViRqW+r1aJNnMjCq3ucWnyJgo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="lemon.ico" size="370070">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PvZbkhWTrUlLjh7x0Wx/vl6jKuo44oyhUuB1r7sTFbA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MineTex.exe.config" size="1842">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yCGncwKyQfA5yK/pPV4fkEOfnfTPlOE/IL+hTdzwP0A=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-CPSUFB8\Eclectictree209" issuerKeyHash="2dfb0e2fc6de908c5785b7fa619a7926a17a3add" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>RipGsfGJudCyezr6uikdwR0VPy36q7J6GpwNyLejOI0=</DigestValue></Reference></SignedInfo><SignatureValue>cv+A6R1T1WZJwgOin3XYwZnXxpUXfSWfGwi0/6C2PV+g/Mosk1s1rQXHhPMa0eYWl8kdNf2/slXQ5pYdkZEaZFGiU2JPbtLuNcu98uTHHAwGPdSsKkZge4rV/ZtLL4T9U/fcOFfRvNsuToFENj5NJGQTaDo0W7m/m9J5XggYekQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vVB8IlGyf4mjA4tVR8gTE19U+A9vPHmcHulBG2XMdswNNzb0heDalyvTS8o2mTIy2oye2aXr8exRrRwSR5HgR4qTWNu9m+EdJBBBj290FO4V6x0XATHdDJab8UJcHUAoix0S8GvykcWm8qCPE8Z9yWbPeRjj0FE0PF3OIW0jxsU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="8d38a3b7c80d9c1a7ab2abfa2d3f151dc11d29bafa3a7bb2d0b989f1b1462a46" Description="" Url=""><as:assemblyIdentity name="MineTex.exe" version="1.0.0.1" publicKeyToken="49a2b9999bae24e9" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-CPSUFB8\Eclectictree209</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>sHvDApVPLfNUIhhTIoNSuibF0QX0T10DEvEJGfLV06w=</DigestValue></Reference></SignedInfo><SignatureValue>oyr01IwpUMSCBWudKLwJDLCR7ypRhMjxTwN3xE8gcp4Z+UUqWqJC5feDImlLkUBFnNnxv97E8nOqsdmIxXaOkzbnO4LEma3hmaT50iWr8Psob910v003Z8QoRA7mUJs0IR4+y3MUWHJb9P+9lC6Uch4TFl3ksEbJMs5d2vhfR2M=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vVB8IlGyf4mjA4tVR8gTE19U+A9vPHmcHulBG2XMdswNNzb0heDalyvTS8o2mTIy2oye2aXr8exRrRwSR5HgR4qTWNu9m+EdJBBBj290FO4V6x0XATHdDJab8UJcHUAoix0S8GvykcWm8qCPE8Z9yWbPeRjj0FE0PF3OIW0jxsU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICFTCCAX6gAwIBAgIQHX9s+YkA1b9KuUmdmnoiyDANBgkqhkiG9w0BAQsFADBJMUcwRQYDVQQDHj4ARABFAFMASwBUAE8AUAAtAEMAUABTAFUARgBCADgAXABFAGMAbABlAGMAdABpAGMAdAByAGUAZQAyADAAOTAeFw0xODA4MTMxOTQzNTFaFw0xOTA4MTQwMTQzNTFaMEkxRzBFBgNVBAMePgBEAEUAUwBLAFQATwBQAC0AQwBQAFMAVQBGAEIAOABcAEUAYwBsAGUAYwB0AGkAYwB0AHIAZQBlADIAMAA5MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC9UHwiUbJ/iaMDi1VHyBMTX1T4D288eZwe6UEbZcx2zA03NvSF4NqXK9NLyjaZMjLajJ7Zpevx7FGtHBJHkeBHipNY272b4R0kEEGPb3QU7hXrHRcBMd0MlpvxQlwdQCiLHRLwa/KRxabyoI8Txn3JZs95GOPQUTQ8Xc4hbSPGxQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAKngm+JzEItYeDwltQCB1TCWH+ufhg+Hn3jB0K1EbB5ihklESerfgLrQ/k/9C8WzkyZlRwsfH8vu3mKAXu/x8xpXnqZjyxpZjhAg14Dc7FIXHX/FkeuGtNRShFVgA2kFWH93piEIzyaUbtRbipkCscGD7euh5g2jXOZfpcRGmXKi</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="MineTex.Lemonade" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <startup>
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.1" />
+    </startup>
+    <userSettings>
+        <MineTex.Lemonade>
+            <setting name="Framework" serializeAs="String">
+                <value>MineTex</value>
+            </setting>
+            <setting name="SystemCore" serializeAs="String">
+                <value>Lemonade</value>
+            </setting>
+            <setting name="SettingsFile" serializeAs="String">
+                <value>settings.json</value>
+            </setting>
+            <setting name="ApplicationConfig" serializeAs="String">
+                <value>App.config</value>
+            </setting>
+            <setting name="CoreConfiguration" serializeAs="String">
+                <value>config.config</value>
+            </setting>
+            <setting name="MainApplication" serializeAs="String">
+                <value>MineTex.vb</value>
+            </setting>
+            <setting name="MainReferenceFile" serializeAs="String">
+                <value>MineTexFramework.php</value>
+            </setting>
+            <setting name="MainCodeReference" serializeAs="String">
+                <value>JSON,C#,VB,L3</value>
+            </setting>
+        </MineTex.Lemonade>
+    </userSettings>
+</configuration>
