@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Quora.exe" version="1.0.0.0" publicKeyToken="3efe17607943795c" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="lemon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Quora" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Quora.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Quora.exe" size="388640">
+      <assemblyIdentity name="Quora" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>l3Psv4HjvZiHRvne55ooV1OfU6f2go/MaP23FSEx2UA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="lemon.ico" size="370070">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PvZbkhWTrUlLjh7x0Wx/vl6jKuo44oyhUuB1r7sTFbA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Quora.exe.config" size="2195">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XzQLm3idwg0ObywWzJ/wVrNuvSLCZZ9nTs0hp846sXk=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-CPSUFB8\Eclectictree209" issuerKeyHash="f422cc1290563bdae57d0f9c992316d0af59d234" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ck1A5RhS+JNGcYQ1wVRmkak4D2jxZ2Saq0M0gN8puW8=</DigestValue></Reference></SignedInfo><SignatureValue>Lhy6DJEjXL9xlsuAVo2CLFjPdJZpWoSNksCd8sH3TPPVqtFyF0Wms0MIR6N6/Ng7qJN4g36EG1lIPSyAncjjtDLPh0+A3rpIzxJzKqJO6AmI0J47wnl3/Piv4wTn8Av/iHJMqditnZGKXHPrMt0DmJwZOnJwARXvxqk9l/+ORc0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sf92ZSzU2SghszmkNTxXJvVwxXDO7EXNnCvn/1sPm7S9TO/RK5KDFRm5bkQnIgRQ8jNgPSAPxP1HqRt8kbmoNHvU+9SOi+UH6Hm8NaHG7uHkjMkb/aHTIyT4o7AdZ7dwnz2FLWm6mAVgfuRml/ZVHR1w7Is9mzVHsvhr+zTAlS0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="6fb929df803443ab9a6467f1680f38a9916654c13584714693f85218e5404d72" Description="" Url=""><as:assemblyIdentity name="Quora.exe" version="1.0.0.0" publicKeyToken="3efe17607943795c" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-CPSUFB8\Eclectictree209</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>7mu9Rwc1kmJ9Hv2P4An+wKkv0lIPgMuIStiyWl4w7DQ=</DigestValue></Reference></SignedInfo><SignatureValue>S+7RhMg70xI82bMdfdzoehWFEzqIqtCLDzy3l2YmM1jBsYcvxvX2ftM6YARd43UE3DiotANhyx4w1OtbMTtJRayPL7jC9ncDleBJT5sgK4dknzqzrotgT4SU4qXCURGRHN55kDtagHnTgGghRr7uH3/6zpbRa/+341p6Ms0S9W0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sf92ZSzU2SghszmkNTxXJvVwxXDO7EXNnCvn/1sPm7S9TO/RK5KDFRm5bkQnIgRQ8jNgPSAPxP1HqRt8kbmoNHvU+9SOi+UH6Hm8NaHG7uHkjMkb/aHTIyT4o7AdZ7dwnz2FLWm6mAVgfuRml/ZVHR1w7Is9mzVHsvhr+zTAlS0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICFTCCAX6gAwIBAgIQWxsKTmhaZJVD170BGlXsazANBgkqhkiG9w0BAQsFADBJMUcwRQYDVQQDHj4ARABFAFMASwBUAE8AUAAtAEMAUABTAFUARgBCADgAXABFAGMAbABlAGMAdABpAGMAdAByAGUAZQAyADAAOTAeFw0xODA5MDExODA0NThaFw0xOTA5MDIwMDA0NThaMEkxRzBFBgNVBAMePgBEAEUAUwBLAFQATwBQAC0AQwBQAFMAVQBGAEIAOABcAEUAYwBsAGUAYwB0AGkAYwB0AHIAZQBlADIAMAA5MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCx/3ZlLNTZKCGzOaQ1PFcm9XDFcM7sRc2cK+f/Ww+btL1M79ErkoMVGbluRCciBFDyM2A9IA/E/UepG3yRuag0e9T71I6L5Qfoebw1ocbu4eSMyRv9odMjJPijsB1nt3CfPYUtabqYBWB+5GaX9lUdHXDsiz2bNUey+Gv7NMCVLQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAHNJDadh3TsMT187q8KaCT6ymKZU6iQATc5sP1FV+WVx3/n9jD+W7vAyXz4VxZ2BE+1QNW1MRC6ihWjOYtvSF1CO0RGj3hvDzLP5IqUlFK+LY4tZoXRjev6H1AZg8E5CCn0pMyZIPprekEUhQ/WRbHVH9y5BWK1xmceKNAMBX0yo</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
