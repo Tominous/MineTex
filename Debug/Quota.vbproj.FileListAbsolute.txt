@@ -1,0 +1,13 @@
+C:\Users\Eclectictree209\Documents\Quota\Quota\bin\Debug\Quota.exe.config
+C:\Users\Eclectictree209\Documents\Quota\Quota\bin\Debug\Quota.exe
+C:\Users\Eclectictree209\Documents\Quota\Quota\bin\Debug\Quota.pdb
+C:\Users\Eclectictree209\Documents\Quota\Quota\bin\Debug\Quota.xml
+C:\Users\Eclectictree209\Documents\Quota\Quota\obj\Debug\Quota.vbprojAssemblyReference.cache
+C:\Users\Eclectictree209\Documents\Quota\Quota\obj\Debug\Quota.Form1.resources
+C:\Users\Eclectictree209\Documents\Quota\Quota\obj\Debug\Quota.Resources.resources
+C:\Users\Eclectictree209\Documents\Quota\Quota\obj\Debug\Quota.vbproj.GenerateResource.cache
+C:\Users\Eclectictree209\Documents\Quota\Quota\obj\Debug\Quota.vbproj.CoreCompileInputs.cache
+C:\Users\Eclectictree209\Documents\Quota\Quota\obj\Debug\Quota.exe
+C:\Users\Eclectictree209\Documents\Quota\Quota\obj\Debug\Quota.xml
+C:\Users\Eclectictree209\Documents\Quota\Quota\obj\Debug\Quota.pdb
+C:\Users\Eclectictree209\Documents\Quota\Quota\obj\Debug\Quota.MavenControl.resources
