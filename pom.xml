@@ -1,0 +1,260 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @Tqcoz Sign out
+16
+100 27 games647/FastLogin
+ Code  Issues 26  Pull requests 0  Wiki  Insights
+FastLogin/bukkit/pom.xml
+4b0ad3b  18 days ago
+@games647 games647 Update ProtocolSupport hook
+     
+231 lines (208 sloc)  7.84 KB
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.games647</groupId>
+        <artifactId>fastlogin</artifactId>
+        <version>1.11-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <!--This have to be in lowercase because it's used by plugin.yml-->
+    <artifactId>fastlogin.bukkit</artifactId>
+    <packaging>jar</packaging>
+
+    <name>FastLoginBukkit</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.1.1</version>
+                <configuration>
+                    <createDependencyReducedPom>false</createDependencyReducedPom>
+                    <shadedArtifactAttached>false</shadedArtifactAttached>
+                    <relocations>
+                        <relocation>
+                            <pattern>com.zaxxer.hikari</pattern>
+                            <shadedPattern>fastlogin.hikari</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>org.slf4j</pattern>
+                            <shadedPattern>fastlogin.slf4j</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>net.md_5.bungee.config</pattern>
+                            <shadedPattern>fastlogin.config</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>com.google.gson</pattern>
+                            <shadedPattern>fastlogin.gson</shadedPattern>
+                        </relocation>
+                    </relocations>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <!--Bukkit-Server-API -->
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+
+        <!--LoginSecurity-->
+        <repository>
+            <id>lenis0012-repo</id>
+            <url>http://ci.lenis0012.com/plugin/repository/everything/</url>
+        </repository>
+
+        <!--ProtocolLib-->
+        <repository>
+            <id>dmulloy2-repo</id>
+            <url>http://repo.dmulloy2.net/nexus/repository/public/</url>
+        </repository>
+
+        <!--AuthMe Reloaded and xAuth -->
+        <repository>
+            <id>codemc-repo</id>
+            <url>https://repo.codemc.org/repository/maven-public/</url>
+        </repository>
+
+        <!--GitHub automatic maven builds-->
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+
+        <!--PlaceholderAPI -->
+        <repository>
+            <id>placeholderapi</id>
+            <url>http://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <!--Common plugin component-->
+        <dependency>
+            <groupId>com.github.games647</groupId>
+            <artifactId>fastlogin.core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!--Server API-->
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.12.2-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--Library for listening and sending Minecraft packets-->
+        <dependency>
+            <groupId>com.comphenix.protocol</groupId>
+            <artifactId>ProtocolLib</artifactId>
+            <version>4.4.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--Changing onlinemode on login process-->
+        <dependency>
+            <groupId>com.github.ProtocolSupport</groupId>
+            <artifactId>ProtocolSupport</artifactId>
+            <!--4.29.dev-->
+            <version>a030da05d5</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--Provide premium placeholders-->
+        <dependency>
+            <groupId>me.clip</groupId>
+            <artifactId>placeholderapi</artifactId>
+            <version>2.8.5</version>
+            <scope>provided</scope>
+            <optional>true</optional>
+            <exclusions>
+                <exclusion>
+                    <groupId>*</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!--Login Plugins-->
+        <dependency>
+            <groupId>fr.xephi</groupId>
+            <artifactId>authme</artifactId>
+            <version>5.4.0</version>
+            <scope>provided</scope>
+            <optional>true</optional>
+            <exclusions>
+                <exclusion>
+                    <groupId>*</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.lenis0012.bukkit</groupId>
+            <artifactId>loginsecurity</artifactId>
+            <version>2.1.7</version>
+            <scope>provided</scope>
+            <optional>true</optional>
+            <exclusions>
+                <exclusion>
+                    <groupId>*</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.games647</groupId>
+            <artifactId>LogIt</artifactId>
+            <version>9e3581db27</version>
+            <scope>provided</scope>
+            <optional>true</optional>
+            <exclusions>
+                <exclusion>
+                    <groupId>*</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>de.luricos.bukkit</groupId>
+            <artifactId>xAuth</artifactId>
+            <version>2.6</version>
+            <scope>provided</scope>
+            <optional>true</optional>
+            <!--These artifacts produce conflicts on downloading-->
+            <exclusions>
+                <exclusion>
+                    <groupId>*</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!--No maven repository :(-->
+        <dependency>
+            <groupId>de.st_ddt.crazy</groupId>
+            <artifactId>CrazyCore</artifactId>
+            <version>10.7.7</version>
+            <optional>true</optional>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/CrazyCore v10.7.7.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>de.st_ddt.crazy</groupId>
+            <artifactId>CrazyLogin</artifactId>
+            <version>7.23</version>
+            <optional>true</optional>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/CrazyLogin v7.23.2.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>ultraauth</groupId>
+            <artifactId>ultraauth</artifactId>
+            <version>2.0.2</version>
+            <optional>true</optional>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/UltraAuth v2.1.2.jar</systemPath>
+        </dependency>
+    </dependencies>
+</project>
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Press h to open a hovercard with more details.

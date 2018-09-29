@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Quora")>
+<Assembly: AssemblyTitle("Quota")>
 <Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("Microsoft Content ( MineTex )")>
-<Assembly: AssemblyProduct("MineTex Quora [ Microsoft Content ]")>
-<Assembly: AssemblyCopyright("Copyright ©  2018 MineTex [ Microsoft Content ]")>
-<Assembly: AssemblyTrademark("MineTex [ Microsoft Content ]")>
+<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyProduct("Quota")>
+<Assembly: AssemblyCopyright("Copyright ©  2018")>
+<Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("2643ec38-780c-4449-93ff-34b4b6d1ec8a")>
+<Assembly: Guid("a4f17d63-f6de-442b-ac38-141e7fec0633")>
 
 ' Version information for an assembly consists of the following four values:
 '
